@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.contenedor{
+    margin: 20px;
+    display: flex;
+    gap:10px;
+    padding: 5px;
+    background-color: darkgray;
+    border-radius: 5px;
+    width: fit-content;
+}
+header{
+    width: 100vw;
+    background-color: darkorchid;
+    display: flex;
+    align-items: center;
+    border-bottom: 7px solid rgba(108, 233, 255, 0.933);
+}
+.headerLogoImg{
+    object-fit: contain;
+    height: 100px;
+}
+.headerContenedorLink{
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.headerLink{
+    cursor: pointer;
+    padding: 14px 24px;
+    transition:0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border-right: solid 1px white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+/* .headerLink-final{
+    border: 0;
+} */
+.headerLink:hover{
+    background-color: violet;
+    text-decoration: underline ;
+    color: yellow;
+    box-shadow: inset 0 0 10px 0px #a26666;
+}
+.headerContenedorSpan{
+    padding: 30px;
+    color: white;
+}
+
+.NavBarSpan{
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.NavBarSpan:hover{
+    color: yellow;
+    text-shadow: 0 0 10px black;
+}
+
+/*TARJETA ITEM*/
+.contenedorItems{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.contenedorItem{
+    box-sizing: content-box;
+    /* display: inline-block; */
+    width: 400px;
+    margin: 10px;
+    background-color: #fffaca;
+    font-family: system-ui;
+}
+.contendorImgItem{
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    background: white;
+}
+.ItemImg{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.Item{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+.contenedorNumero{
+    box-sizing: border-box;
+    margin: 20px 10px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 0px 2px #91b2ef;
+}
+.contendorSpan{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: fit-content;
+    padding: 2px 5px;
+}
+.numeroItem,.ItemPrecio{
+    font-size: 30px;
+    font-family: system-ui;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+.spanStock{
+    color: #91b2ef;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.spanStock:hover{
+    color: #48f54f;
+    text-shadow: 0 0 4px #48f54f;
+}
+.spanStock.IconoAS-chevron-up{
+    margin-bottom: 2px;
+}
+.numeroStock, .ItemStock{
+    text-align: center;
+    color: grey;
+    margin-bottom: 10px;
+}
+.botonCarrito{
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    font-size: 22px;
+    background: beige;
+    cursor: pointer;
+}
+
+/*CATEGORIAS*/
+
+.listadoCategorias{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    background-color: #3e71d1;
+    justify-content: center;
+}
+.btnCategoria{
+    background-color: #91b2ef;
+    padding: 10px;
+    border: 2px solid #3e71d1;
+    border-right-width: 1px ;
+    border-left-width: 1px ;
+    cursor: pointer;
+    color: #fff;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+.btnCategoria:hover{
+    background-color: transparent;
+    color:#91ecef;
+    font-weight: 600;
+}
+
+#cargandoCategorias{
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
